@@ -1,15 +1,14 @@
-<!-- client/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MovieCRUD App</title>
+    <title>MovieCRUD Application</title>
     <style>
-      /* Minimal styling for clarity */
-      body { font-family: Arial; margin: 2em; }
-      form, table { margin-bottom: 2em; }
-      table { border-collapse: collapse; width: 100%; }
-      td, th { border: 1px solid #ccc; padding: 8px; }
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        form, table { margin-bottom: 2em; }
+        table { border-collapse: collapse; width: 100%; }
+        td, th { border: 1px solid #ccc; padding: 8px; }
+        th { background: #eee; }
     </style>
 </head>
 <body>
@@ -24,7 +23,9 @@
     </form>
     <table>
         <thead>
-            <tr><th>Title</th><th>Director</th><th>Year</th><th>Genre</th><th>Actions</th></tr>
+            <tr>
+                <th>Title</th><th>Director</th><th>Year</th><th>Genre</th><th>Actions</th>
+            </tr>
         </thead>
         <tbody id="movieTable"></tbody>
     </table>
