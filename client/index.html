@@ -1,11 +1,33 @@
+<!-- client/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Node.js on Azure Template</title>
+    <meta charset="UTF-8">
+    <title>MovieCRUD App</title>
+    <style>
+      /* Minimal styling for clarity */
+      body { font-family: Arial; margin: 2em; }
+      form, table { margin-bottom: 2em; }
+      table { border-collapse: collapse; width: 100%; }
+      td, th { border: 1px solid #ccc; padding: 8px; }
+    </style>
 </head>
 <body>
-	<h1>Node.js and Express Hosted on Microsoft Azure Template</h1>
-	<p>This repository is a template that can be used to create a Node.js and Express website for hosting on Microsoft 
-	Azure.</p>
+    <h1>MovieCRUD Application</h1>
+    <form id="movieForm">
+        <input type="hidden" id="movieId">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="director" placeholder="Director">
+        <input type="number" id="year" placeholder="Year">
+        <input type="text" id="genre" placeholder="Genre">
+        <button type="submit">Save Movie</button>
+    </form>
+    <table>
+        <thead>
+            <tr><th>Title</th><th>Director</th><th>Year</th><th>Genre</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="movieTable"></tbody>
+    </table>
+    <script src="index.js"></script>
 </body>
 </html>
